@@ -1,21 +1,21 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useSectionObserver } from '../../hooks/useSectionObserver';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Linkedin, Mail } from "lucide-react";
+import React from "react";
+import { useSectionObserver } from "../../hooks/useSectionObserver";
 
 const About: React.FC = () => {
-  const { ref } = useSectionObserver('about');
+  const { ref } = useSectionObserver("about");
 
   const socialLinks = [
     {
       icon: <Linkedin className="w-5 h-5" />,
-      label: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/jagadeesh-kambala-34a93732b/',
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/jagadeesh-kambala-34a93732b/",
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      label: 'Email',
-      url: 'mailto:kambala.jagadeesh19@gmail.com',
+      label: "Email",
+      url: "mailto:kambala.jagadeesh19@gmail.com",
     },
   ];
 
@@ -46,7 +46,7 @@ const About: React.FC = () => {
               </div>
               <div className="mt-6 text-center md:text-left">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  John Doe
+                  Jagadeesh Kambala
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Full Stack Developer
@@ -73,11 +73,21 @@ const About: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
                 About Me
               </h2>
-             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-  I'm Jagadeesh, a Frontend Developer, UI/UX Designer, and Python Programmer with a strong foundation in JavaScript, React, TypeScript, and Data Structures & Algorithms. I enjoy building responsive, user-focused web applications and continually keep up with modern development practices.<br></br>
-<br></br>
-  In addition to frontend development, I have a keen eye for design and usability, which helps me bridge the gap between aesthetics and functionality. I'm passionate about writing clean, maintainable code and collaborating with teams to bring innovative ideas to life. Whether it's designing intuitive user interfaces or optimizing performance, I approach each project with curiosity, precision, and a growth mindset.
-</p>
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                I'm Jagadeesh, a Web Developer, Cloud Practitioner, and Python
+                Programmer with a strong foundation in JavaScript, React,
+                TypeScript, and Django. I enjoy building responsive,
+                user-focused web applications and continually keep up with
+                modern development practices.<br></br>
+                <br></br>
+                In addition to Web development, I have a keen eye for Cloud
+                Engineering Skills, which helps me bridge the gap between cloud
+                and functionality. I'm passionate about writing clean,
+                maintainable code and collaborating with teams to bring
+                innovative ideas to life. Whether it's designing intuitive user
+                interfaces or optimizing performance, I approach each project
+                with curiosity, precision, and a growth mindset.
+              </p>
             </div>
           </div>
         </motion.div>
