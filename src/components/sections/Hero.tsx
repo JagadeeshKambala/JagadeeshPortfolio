@@ -71,9 +71,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-600 dark:text-gray-200 max-w-2xl mx-auto mb-6"
         >
-          I'm a passionate Web Developer specializing in React, TypeScript, and
-          Tailwind CSS, and Django dedicated to building innovative,
-          user-friendly web experiences. With a strong grasp of AI's
+          I'm a passionate Web Developer, Cloud Practitioner specializing in
+          React, TypeScript, and Tailwind CSS, and Django dedicated to building
+          innovative, user-friendly web experiences. With a strong grasp of AI's
           transformative potential, I integrate intelligent workflows into my
           development process to deliver faster, smarter, and more impactful
           solutions.
