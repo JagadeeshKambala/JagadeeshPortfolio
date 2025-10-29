@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,4 +42,49 @@ body {
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #777;
+}
+/* 🍏 Extreme Slow Liquid Morph (VisionOS Level) */
+@keyframes liquidSphere {
+  0% {
+    clip-path: inset(0 round 32px);
+    border-radius: 32px;
+    filter: blur(0px);
+  }
+
+  100% {
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 999px;
+    filter: blur(0.8px);
+  }
+}
+
+.morph-card {
+  transition: transform 4.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 4.5s cubic-bezier(0.16, 1, 0.3, 1),
+    backdrop-filter 4.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  border-radius: 32px;
+  clip-path: inset(0 round 32px);
+
+  backdrop-filter: blur(22px) saturate(160%);
+  background: rgba(255, 255, 255, 0.07);
+
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.12),
+    0 0 32px rgba(0, 0, 0, 0.28);
+
+  will-change: clip-path, border-radius, backdrop-filter, transform;
+}
+
+/* Hover morph — ultra slow and fluid */
+.morph-card:hover {
+  animation: liquidSphere 14s ease-in-out forwards; /* <-- MUCH SLOWER */
+  transform: translateY(-10px) scale(1.05);
+  backdrop-filter: blur(34px) saturate(240%);
+  box-shadow: inset 0 0 55px rgba(255, 255, 255, 0.32),
+    0 0 70px rgba(0, 0, 0, 0.48);
+}
+
+/* Smooth reverse with the same slow pace */
+.morph-card:not(:hover) {
+  animation: liquidSphere 14s ease-in-out reverse forwards;
 }
