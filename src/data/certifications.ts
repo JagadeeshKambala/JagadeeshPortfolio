@@ -23,7 +23,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "AWS Cloud Technical Essentials",
-    issuer: "Amazon Web Services",
+    issuer: "Coursera/AWS",
     date: "Aug 2023",
     duration: "Valid for 3 years",
     link: "",
@@ -31,7 +31,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Meta",
+    issuer: "Coursera/Meta",
     date: "Jan 2024",
     duration: "Valid for 3 years",
     link: "",
@@ -39,7 +39,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Introduction to Networking",
-    issuer: "NVIDIA",
+    issuer: "Coursera/Nvidia",
     date: "Mar 2024",
     duration: "Credential",
     link: "",
