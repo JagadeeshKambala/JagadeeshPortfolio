@@ -1,0 +1,13 @@
+.line-text {
+  --p: 0;
+
+  /* Stronger contrast curve */
+  color: rgba(
+    calc(140 + (220 - 140) * var(--p)),
+    /* R */ calc(140 + (200 - 140) * var(--p)),
+    /* G */ calc(160 + (255 - 160) * var(--p)),
+    /* B */ calc(0.25 + (1 - 0.25) * var(--p)) /* Alpha */
+  );
+
+  transition: color 0.2s linear;
+}

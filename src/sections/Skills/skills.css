@@ -1,0 +1,253 @@
+/* =========================================================
+   SKILLS SECTION – FIXED LAYOUT WITH TERMINAL
+   ========================================================= */
+
+/* =========================
+   Skills Section Wrapper
+   ========================= */
+
+.skills-section {
+  height: 110vh;
+  padding: 0 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: linear-gradient(180deg, #050505 0%, #081427 45%, #0e074d 100%);
+}
+
+/* =========================
+   Skills Container
+   ========================= */
+
+.skills-container {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+/* =========================
+   Heading (Top)
+   ========================= */
+
+.skills-heading {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* =========================
+   Terminal Container
+   ========================= */
+
+.terminal {
+  width: 100%;
+  max-width: 900px;
+  min-height: 180px;
+
+  background: #0b0f14;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+  font-family: "JetBrains Mono", monospace;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: height 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* =========================
+   Terminal Header
+   ========================= */
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  padding: 12px 14px;
+  background: #111;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background: #ff5f56;
+}
+
+.dot.yellow {
+  background: #ffbd2e;
+}
+
+.dot.green {
+  background: #27c93f;
+}
+
+/* =========================
+   Terminal Body
+   ========================= */
+
+.terminal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  color: #c7f9cc;
+  font-size: 14px;
+  line-height: 1.7;
+
+  overflow: hidden;
+}
+
+/* =========================
+   Terminal Lines
+   ========================= */
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.terminal-line.active {
+  opacity: 1;
+}
+
+.prompt {
+  color: #6cf2a2;
+  flex-shrink: 0;
+}
+
+/* =========================
+   Scramble / Background Lines
+   ========================= */
+
+.scramble {
+  opacity: 0.35;
+  filter: blur(0.3px);
+}
+
+.scramble-text {
+  color: #8affc1;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   Output Lines
+   ========================= */
+
+.output {
+  margin-left: 18px;
+  color: #f1faee;
+  opacity: 0.95;
+  word-spacing: 14px;
+}
+
+/* =========================
+   Typewriter Output
+   ========================= */
+
+.terminal-output {
+  color: #f1faee;
+}
+
+/* =========================
+   Cursor
+   ========================= */
+
+.cursor {
+  margin-left: 4px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* =========================
+   Skills Viewport (Marquee)
+   ========================= */
+
+.skills-viewport {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 12px;
+
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.skills-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   Bottom Large Statement
+   ========================= */
+
+.skills-footer {
+  max-width: 900px;
+  text-align: center;
+}
+
+.skills-footer p {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 38px;
+  }
+
+  .skills-footer p {
+    font-size: 20px;
+  }
+
+  .terminal-body {
+    padding: 18px;
+    font-size: 13px;
+  }
+}
