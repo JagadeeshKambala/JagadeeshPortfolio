@@ -31,7 +31,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Amazon Web Services",
+    issuer: "Meta",
     date: "Jan 2024",
     duration: "Valid for 3 years",
     link: "",
@@ -39,7 +39,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Introduction to Networking",
-    issuer: "Google",
+    issuer: "NVIDIA",
     date: "Mar 2024",
     duration: "Credential",
     link: "",
