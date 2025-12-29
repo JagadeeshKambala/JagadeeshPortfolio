@@ -7,7 +7,7 @@ export default function HeroDataStrip() {
       <div className="h-px w-full bg-white/10" />
 
       {/* Data grid */}
-      <div className="grid grid-cols-3 gap-12 px-10 py-8">
+      <div className="grid grid-cols-2 gap-12 px-10 py-8">
         {/* Brand */}
         <DataItem
           label="CLOUD ARCHITECTURE |"
@@ -24,11 +24,6 @@ export default function HeroDataStrip() {
         </div>
 
         {/* Verification */}
-        <DataItem
-          label="Verification"
-          value="████ ███ ████ █ ███"
-          align="center"
-        />
 
         {/* Index */}
       </div>
